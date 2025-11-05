@@ -1,14 +1,13 @@
-import React from 'react'
+import React from "react";
 
 function CustomIcon({ href, iconImg }) {
-    return (
-        <button className=''>
-            <a href={`https://${href}`} target="_blank">
-                <img src={iconImg}
-                    className='h-full'
-                />
-            </a>
-        </button>)
+  return (
+    <button>
+      <a href={`https://${href}`} target="_blank">
+        <img src={iconImg} />
+      </a>
+    </button>
+  );
 }
 
-export default CustomIcon
+export default CustomIcon;

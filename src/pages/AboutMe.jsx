@@ -5,32 +5,32 @@ import CustomIcon from "../components/CustomIcon";
 
 function AboutMe() {
   return (
-    <div className="flex-col px-32 py-16 gap-12">
-      <div className="title flex-row gap-[2em] w-1/2">
-        <h1>About me</h1>
+    <div className="grid-container">
+      <div className="title">
+        <h1>Hadassa Medeiros</h1>
       </div>
-      <div className="flex-row h-[7%] gap-[3%]">
+      <div className="icons">
         <CustomIcon
           href="linkedin.com/in/hadassamedeiros"
           iconImg={lnkdnIcon}
         />
-        <CustomIcon href="github.com/haudacia" iconImg={githubIcon} />
+        <CustomIcon href="github.com/hadassa-medeiros" iconImg={githubIcon} />
       </div>
-
+      <ul className="info">
+        <li>Full-stack developer (front-end focus)</li>
+        <li>Background in Architecture and Urbanism</li>
+        <li>Barcelona, Spain</li>
+      </ul>
       <div className="description">
-        <ul className="personal-info">
-          <li>Full-stack developer (front-end focus)</li>
-          <li>Background in Architecture and Urbanism</li>
-          <li>hadassa.m.lima@gmail.com</li>
-          <li>barcelona, spain</li>
-        </ul>
-        <div className="flex-col">
-          <p>
-            I like things to flow and be uncomplicated. Full stack
-            developer, front-end focus, UX awareness, academic background in architecture and urbanism. I specialize in the MERN stack (MongoDB, Express, React,
-            Node.js).
-          </p>
-        </div>
+        <p>
+          I like things to flow and be uncomplicated. Full stack developer,
+          front-end focus, UX awareness, academic background in architecture and
+          urbanism. I specialize in the MERN stack (MongoDB, Express, React,
+          Node.js).
+        </p>
+      </div>
+      <div className="projects">
+        <p className="note">[ projects section in progress ]</p>
       </div>
     </div>
   );
