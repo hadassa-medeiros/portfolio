@@ -1,7 +1,6 @@
 import React from "react";
 import lnkdnIcon from "/assets/lnkdn-icon-cropped.svg";
 import githubIcon from "/assets/github-icon.svg";
-import CustomIcon from "../components/CustomIcon";
 
 function AboutMe() {
   return (
@@ -13,11 +12,16 @@ function AboutMe() {
           <h1>Hadassa Medeiros</h1>
         </div>
         <div className="icons">
-          <CustomIcon
-            href="linkedin.com/in/hadassamedeiros"
-            iconImg={lnkdnIcon}
-          />
-          <CustomIcon href="github.com/hadassa-medeiros" iconImg={githubIcon} />
+          <button>
+            <a href="linkedin.com/in/hadassamedeiros" target="_blank">
+              <img src={lnkdnIcon} />
+            </a>
+          </button>
+          <button>
+            <a href="github.com/hadassa-medeiros" target="_blank">
+              <img src={githubIcon} />
+            </a>
+          </button>
         </div>
         <ul className="info">
           <li>Full-stack developer (front-end focus)</li>
